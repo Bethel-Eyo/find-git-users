@@ -1,0 +1,7 @@
+{
+  "baseUrl": "http://localhost:3000",
+  "backendUrl": "https://api.github.com",
+  "viewportWidth": 1200,
+  "viewportHeight": 800,
+  "video": false
+}
