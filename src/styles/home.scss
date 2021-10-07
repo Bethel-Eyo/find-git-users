@@ -1,0 +1,78 @@
+@import "../config/color.scss";
+
+.casing {
+  background-color: $background_main;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2%;
+  padding-bottom: 5%;
+}
+
+.noData {
+  color: white;
+  margin-top: 10%;
+}
+
+.title {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.field {
+  height: 56px;
+  border-radius: 4px;
+  position: relative;
+  background-color: $field_bg;
+  transition: 0.3s all;
+}
+
+.field:hover {
+  background-color: $hover_bg_color;
+  box-shadow: 0px 4px 20px 0px $hover_shadow_color;
+}
+
+.field.focussed input {
+  padding: 24px 16px 8px 16px;
+}
+.field.focussed input + label {
+  top: 4px;
+  opacity: 1;
+  color: $focused_color;
+}
+.field.locked {
+  pointer-events: none;
+}
+.field input {
+  height: 56px;
+  position: relative;
+  padding: 0px 16px;
+  border: none;
+  border-radius: 4px;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  background-color: transparent;
+  color: $input_color;
+  outline: none;
+  box-shadow: 0px 4px 20px 0px transparent;
+  transition: 0.3s background-color ease-in-out, 0.3s box-shadow ease-in-out,
+    0.1s padding ease-in-out;
+  -webkit-appearance: none;
+}
+.field input::-webkit-input-placeholder {
+  color: $placeholder_color;
+}
+.field input::-moz-placeholder {
+  color: $placeholder_color;
+}
+.field input:-ms-input-placeholder {
+  color: $placeholder_color;
+}
+.field input:-moz-placeholder {
+  color: $placeholder_color;
+}

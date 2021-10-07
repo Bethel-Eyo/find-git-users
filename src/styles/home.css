@@ -1,0 +1,96 @@
+.casing {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2%;
+  padding-bottom: 5%;
+}
+
+.noData {
+  color: white;
+  margin-top: 10%;
+}
+
+.title {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.field {
+  height: 56px;
+  border-radius: 4px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.field:hover {
+  background-color: rgba(255, 255, 255, 0.45);
+  -webkit-box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+.field.focussed input {
+  padding: 24px 16px 8px 16px;
+}
+
+.field.focussed input + label {
+  top: 4px;
+  opacity: 1;
+  color: #28cc70;
+}
+
+.field.locked {
+  pointer-events: none;
+}
+
+.field input {
+  height: 56px;
+  position: relative;
+  padding: 0px 16px;
+  border: none;
+  border-radius: 4px;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  background-color: transparent;
+  color: #282828;
+  outline: none;
+  -webkit-box-shadow: 0px 4px 20px 0px transparent;
+          box-shadow: 0px 4px 20px 0px transparent;
+  -webkit-transition: 0.3s background-color ease-in-out, 0.1s padding ease-in-out, 0.3s -webkit-box-shadow ease-in-out;
+  transition: 0.3s background-color ease-in-out, 0.1s padding ease-in-out, 0.3s -webkit-box-shadow ease-in-out;
+  transition: 0.3s background-color ease-in-out, 0.3s box-shadow ease-in-out, 0.1s padding ease-in-out;
+  transition: 0.3s background-color ease-in-out, 0.3s box-shadow ease-in-out, 0.1s padding ease-in-out, 0.3s -webkit-box-shadow ease-in-out;
+  -webkit-appearance: none;
+}
+
+.field input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.field input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.field input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.field input:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+/*# sourceMappingURL=home.css.map */
